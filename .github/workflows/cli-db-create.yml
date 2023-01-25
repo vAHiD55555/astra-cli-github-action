@@ -14,10 +14,14 @@ jobs:
       ASTRA_DB_KEYSPACE: demo
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Install CLI
+    
+      - name: Checkout
+        uses: actions/checkout@v3
+      
+      - name: Install Astra CLI
         run: curl -Ls "https://dtsx.io/get-astra-cli" | bash
+        
       - name: Create DB
-        run: astra db create $ASTRA_DB_NAME -k $demo --if-not-exists 
+        run: astra db create $ASTRA_DB_NAME -k $ASTRA_DB_KEYSPACE -t $ASTRA_DB_APPLICATION_TOKEN --if-not-exists 
 
         
