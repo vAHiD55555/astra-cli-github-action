@@ -12,6 +12,7 @@ jobs:
       ASTRA_DB_APPLICATION_TOKEN: ${{ secrets.ASTRA_DB_APPLICATION_TOKEN }}
       ASTRA_DB_NAME: demo
       ASTRA_DB_KEYSPACE: demo
+      TERM: linux
     runs-on: ubuntu-latest
     steps:
     
