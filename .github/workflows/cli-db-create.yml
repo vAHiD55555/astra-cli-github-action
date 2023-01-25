@@ -23,6 +23,6 @@ jobs:
         run: curl -Ls "https://dtsx.io/get-astra-cli" | bash
         
       - name: Create DB
-        run: astra db create $ASTRA_DB_NAME -k $ASTRA_DB_KEYSPACE -t $ASTRA_DB_APPLICATION_TOKEN --if-not-exists 
+        run: /home/runner/.astra/cli/astra db create $ASTRA_DB_NAME -k $ASTRA_DB_KEYSPACE -t $ASTRA_DB_APPLICATION_TOKEN --if-not-exists 
 
         
