@@ -1,0 +1,12 @@
+{
+  "name": "Starter to integrate Astra CLI with Github Action",
+  "description": "CLI can be used in CI/CD pipelines, creating environment at will",
+  "duration": "10 minutes",
+  "skillLevel": "Beginner",
+  "gitpodUrl": "https://gitpod.io/#https://github.com/DataStax-Examples/astra-cli-github-action",
+  "githubUrl": "https://github.com/DataStax-Examples/astra-cli-github-action",
+  "tags": [{ "name": "CLI" }, { "name": "continuous integration" }, { "name": "github" }],
+  "category": "starter",
+  "priority": 1,
+  "heroImage": "https://awesome-astra.github.io/docs/img/github/github_logo.png"
+}
