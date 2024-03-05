@@ -1,0 +1,58 @@
+$> astra help db create
+
+NAME
+        astra db create - Create a database with cli
+
+SYNOPSIS
+        astra db create [ --async ] [ {-cf | --config-file} <CONFIG_FILE> ]
+                [ {-conf | --config} <CONFIG_SECTION> ]
+                [ {--if-not-exist | --if-not-exists} ]
+                [ {-k | --keyspace} <KEYSPACE> ] [ --no-color ]
+                [ {-o | --output} <FORMAT> ] [ {-r | --region} <DB_REGION> ]
+                [ --timeout <timeout> ] [ --token <AUTH_TOKEN> ]
+                [ {-v | --verbose} ] [ --wait ] [--] <DB>
+
+OPTIONS
+        --async
+            Will not wait for the resource to become available
+
+        -cf <CONFIG_FILE>, --config-file <CONFIG_FILE>
+            Configuration file (default = ~/.astrarc)
+
+        -conf <CONFIG_SECTION>, --config <CONFIG_SECTION>
+            Section in configuration file (default = ~/.astrarc)
+
+        --if-not-exist, --if-not-exists
+            will create a new DB only if none with same name
+
+        -k <KEYSPACE>, --keyspace <KEYSPACE>
+            Default keyspace created with the Db
+
+        --no-color
+            Remove all colors in output
+
+        -o <FORMAT>, --output <FORMAT>
+            Output format, valid values are: human,json,csv
+
+        -r <DB_REGION>, --region <DB_REGION>
+            Cloud provider region to provision
+
+        --timeout <timeout>
+            Provide a limit to the wait period in seconds, default is 300s.
+
+        --token <AUTH_TOKEN>
+            Key to use authenticate each call.
+
+        -v, --verbose
+            Verbose mode with log in console
+
+        --wait
+            Will wait until the database become ACTIVE
+
+        --
+            This option can be used to separate command-line options from the
+            list of arguments (useful when arguments might be mistaken for
+            command-line options)
+
+        <DB>
+            Database name (not unique)
